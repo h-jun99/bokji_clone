@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울시각장애인복지관</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js" defer></script>
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <section class="all">
+        <header>
+          <div class="headerwrap">
+            <h1 class="logo"><a href="#"><img src="img/header/hd_logo.svg" alt="로고"></a></h1>
+            <nav>
+              <ul>
+                <li class="gnb">
+                  <a href="#">복지관소개</a>
+                  <ul class="sub">
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">미션·비전</a></li>
+                    <li><a href="#">인재상</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">시설안내</a></li>
+                    <li><a href="#">조직도·직원소개</a></li>
+                    <li><a href="#">법인소개</a></li>
+                  </ul>
+                </li>
+                <li class="gnb">
+                  <a href="#">사업안내</a>
+                  <ul class="sub">
+                    <li><a href="#">경영지원팀</a></li>
+                    <li><a href="#">기획전략팀</a></li>
+                    <li><a href="#">대체자료팀</a></li>
+                    <li><a href="#">자립지원팀</a></li>
+                    <li><a href="#">통합복지팀</a></li>
+                  </ul>
+                </li>
+                <li class="gnb">
+                  <a href="#">이용안내</a>
+                  <ul class="sub">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">상담신청</a></li>
+                    <li><a href="#">복지관 일정</a></li>
+                    <li><a href="#">프로그램안내</a></li>
+                    <li><a href="#">이주의 식단</a></li>
+                    <li><a href="#">실습안내</a></li>
+                    <li><a href="#">기관방문안내</a></li>
+                    <li><a href="#">열린의견함</a></li>
+                  </ul>
+                </li>
+                <li class="gnb">
+                  <a href="#">후원·자원봉사</a>
+                  <ul class="sub">
+                    <li><a href="#">후원안내</a></li>
+                    <li><a href="#">자원봉사안내</a></li>
+                    <li><a href="#">나눔소식</a></li>
+                  </ul>
+                </li>
+                <li class="gnb">
+                  <a href="#">알림공간</a>
+                  <ul class="sub">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">서시복이야기</a></li>
+                    <li><a href="#">사서함이야기</a></li>
+                    <li><a href="#">채용공고</a></li>
+                    <li><a href="#">경영공시</a></li>
+                    <li><a href="#">언론홍보</a></li>
+                    <li><a href="#">발간자료</a></li>
+                    <li><a href="#">이달의 대체자료</a></li>
+                  </ul>
+                </li>
+                <li class="gnb">
+                  <a href="#">직원게시판</a>
+                  <ul class="sub">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">정보공유실</a></li>
+                    <li><a href="#">비상연락망</a></li>
+                    <li><a href="#">고충처리게시판</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="idmenu">
+              <ul class="idlist">
+                <li>
+                  <a href="#">마이페이지</a>
+                </li>
+                <li>
+                  <a href="#">로그인</a>
+                </li>
+              </ul>
+              <a class="allmenu" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+          </div>
+        </header>
+        <!-- 메뉴팝업 -->
+        <div class="popupbox">
+          <div class="popup">
+            <ul class="popupmenu">
+              <li class="gnb">
+                <a href="#">복지관소개</a>
+                <ul class="sub">
+                  <li><a href="#">인사말</a></li>
+                  <li><a href="#">미션·비전</a></li>
+                  <li><a href="#">인재상</a></li>
+                  <li><a href="#">연혁</a></li>
+                  <li><a href="#">시설안내</a></li>
+                  <li><a href="#">조직도·직원소개</a></li>
+                  <li><a href="#">법인소개</a></li>
+                </ul>
+              </li>
+              <li class="gnb">
+                <a href="#">사업안내</a>
+                <ul class="sub">
+                  <li><a href="#">경영지원팀</a></li>
+                  <li><a href="#">기획전략팀</a></li>
+                  <li><a href="#">대체자료팀</a></li>
+                  <li><a href="#">자립지원팀</a></li>
+                  <li><a href="#">통합복지팀</a></li>
+                </ul>
+              </li>
+              <li class="gnb">
+                <a href="#">이용안내</a>
+                <ul class="sub">
+                  <li><a href="#">이용안내</a></li>
+                  <li><a href="#">상담신청</a></li>
+                  <li><a href="#">복지관 일정</a></li>
+                  <li><a href="#">프로그램안내</a></li>
+                  <li><a href="#">이주의 식단</a></li>
+                  <li><a href="#">실습안내</a></li>
+                  <li><a href="#">기관방문안내</a></li>
+                  <li><a href="#">열린의견함</a></li>
+                </ul>
+              </li>
+              <li class="gnb">
+                <a href="#">후원·자원봉사</a>
+                <ul class="sub">
+                  <li><a href="#">후원안내</a></li>
+                  <li><a href="#">자원봉사안내</a></li>
+                  <li><a href="#">나눔소식</a></li>
+                </ul>
+              </li>
+              <li class="gnb">
+                <a href="#">알림공간</a>
+                <ul class="sub">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">서시복이야기</a></li>
+                  <li><a href="#">사서함이야기</a></li>
+                  <li><a href="#">채용공고</a></li>
+                  <li><a href="#">경영공시</a></li>
+                  <li><a href="#">언론홍보</a></li>
+                  <li><a href="#">발간자료</a></li>
+                  <li><a href="#">이달의 대체자료</a></li>
+                </ul>
+              </li>
+              <li class="gnb">
+                <a href="#">직원게시판</a>
+                <ul class="sub">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">정보공유실</a></li>
+                  <li><a href="#">비상연락망</a></li>
+                  <li><a href="#">고충처리게시판</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a class="close" href="#">
+              <span></span>
+              <span></span>
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <main>
+          <div class="content">
+              <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="slide1text">
+                          <h2>함께하며 힘이 되는 좋은 이웃</h2>
+                          <h2>서울시각장애인복지관</h2>
+                          <h6>다같이 함께하는 사회구현을 위해 항상 노력과 봉사하는 정신으로 임하겠습니다.</h6>
+                        </div>
+                        <img src="img/main/swiper/main_visual01.jpg" alt="스와이퍼1">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="slide2text">
+                          <h2>기억할게요. 당신은</h2>
+                          <h2>우리에게 소중한 사람인 걸</h2>
+                          <h6>사랑의 나눔을 기다립니다. <p>문의 02-3433-3868</p></h6>
+                        </div>
+                        <img src="img/main/swiper/main_visual02.jpg" alt="스와이퍼2">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="slide3text">
+                          <h2>시각장애인에게</h2>
+                          <h2>희망의 빛이 되는 복지관</h2>
+                          <h6>서울시각장애인복지관 홈페이지를 방문해 주신 여러분을 진심으로 환영합니다.</h6>
+                        </div>
+                        <img src="img/main/swiper/main_visual03.jpg" alt="스와이퍼3">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="controller">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-stop stop"></div>
+                    <div class="swiper-button-go"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="main_content">
+            <div class="main_category">
+              <div class="categorybox">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="categorytext">
+                        <div class="cimg1"></div>
+                        <p>이용안내</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="categorytext">
+                        <div class="cimg2"></div>
+                        <p>공지사항</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="categorytext">
+                        <div class="cimg3"></div>
+                        <p>복지관 일정</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="categorytext">
+                        <div class="cimg4"></div>
+                        <p>상담신청</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="categorytext">
+                        <div class="cimg5"></div>
+                        <p>후원신청</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="categorytext">
+                        <div class="cimg6"></div>
+                        <p>시각장애인의 이해</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+  
+            <div class="main_news">
+              <div class="newslist">
+                <div class="listtitle">
+                  <div class="bigtitle">복지관 <p>소식</p></div>
+                  <ul class="smalltitle">
+                    <li class="on">전체</li>
+                    <li>공지사항</li>
+                    <li>경영공시</li>
+                    <li>채용정보</li>
+                    <li>발간자료</li>
+                    <li><a href="#">
+                          <div class="plus">
+                            <span></span>
+                          </div>
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="listbox">
+                  <div class="listsection" title="전체">
+                    <ul>
+                      <li>
+                        <span class="pink">공지사항</span>
+                        <div class="listboxlist">복지관 휴게실 이용 수칙 안내</div>
+                        <p>2024.07.18</p>
+                      </li>
+                      <li>
+                        <span class="yellow">경영공시</span>
+                        <div class="listboxlist">2024년 2차 추경예산안 공고</div>
+                        <p>2024.07.24</p>
+                      </li>
+                      <li>
+                        <span class="blue">채용정보</span>
+                        <div class="listboxlist"><p>채용공고</p>통합복지팀 사회복지사 채용 (육아휴직대체 계약직 1명)</div>
+                        <p>2024.07.08</p>
+                      </li>
+                      <li>
+                        <span class="purple">발간자료</span>
+                        <div class="listboxlist"><p>소식지(좋은이웃)</p>통권85호</div>
+                        <p>2024.02.13</p>
+                      </li>
+                      <li>
+                        <span class="pink">공지사항</span>
+                        <div class="listboxlist">[공지]2024년 2회차 운영위원회 보고</div>
+                        <p>2024.06.18</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="listsection" title="공지사항">
+                    <ul>
+                      <li>
+                        <span class="pink">공지사항</span>
+                        <div class="listboxlist">복지관 휴게실 이용 수칙 안내</div>
+                        <p>2024.07.18</p>
+                      </li>
+                      <li>
+                        <span class="pink">공지사항</span>
+                        <div class="listboxlist">[공지] 2024년 2회차 운영위원회 보고</div>
+                        <p>2024.06.18</p>
+                      </li>
+                      <li>
+                        <span class="pink">공지사항</span>
+                        <div class="listboxlist">복지관 6월 법정공휴일 휴관 안내</div>
+                        <p>2024.06.03</p>
+                      </li>
+                      <li>
+                        <span class="pink">공지사항</span>
+                        <div class="listboxlist">홈페이지 정상 운영 안내</div>
+                        <p>2024.05.31</p>
+                      </li>
+                      <li>
+                        <span class="pink">공지사항</span>
+                        <div class="listboxlist">[공지] 사회복지법인 선한목자재단 151차 이사회 회의록 공개</div>
+                        <p>2024.05.10</p>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="listsection" title="경영공시">
+                    <ul>
+                      <li>
+                        <span class="yellow">경영공시</span>
+                        <div class="listboxlist">2024년 2차 추경예산안 공고</div>
+                        <p>2024.07.24</p>
+                      </li>
+                      <li>
+                        <span class="yellow">경영공시</span>
+                        <div class="listboxlist">2024년 6월 업무추진비 사용 내역</div>
+                        <p>2024.07.09</p>
+                      </li>
+                      <li>
+                        <span class="yellow">경영공시</span>
+                        <div class="listboxlist">2024년 5월 업무추진비 사용 내역</div>
+                        <p>2024.06.10</p>
+                      </li>
+                      <li>
+                        <span class="yellow">경영공시</span>
+                        <div class="listboxlist">2024년 4월 업무추진비 사용 내역</div>
+                        <p>2024.05.08</p>
+                      </li>
+                      <li>
+                        <span class="yellow">경영공시</span>
+                        <div class="listboxlist">2024년 3월 업무추진비 사용 내역</div>
+                        <p>2024.04.01</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="listsection" title="채용정보">
+                    <ul>
+                      <li>
+                        <span class="blue">채용정보</span>
+                        <div class="listboxlist"><p>채용공고</p>통합복지팀 사회복지사 채용 (육아휴직대체 계약직 1명)</div>
+                        <p>2024.07.08</p>
+                      </li>
+                      <li>
+                        <span class="blue">채용정보</span>
+                        <div class="listboxlist"><p>채용공고</p>통합복지팀 사회복지사 채용공고 결과 안내 (육아휴직대체 계약직 1명)</div>
+                        <p>2024.07.03</p>
+                      </li>
+                      <li>
+                        <span class="blue">채용정보</span>
+                        <div class="listboxlist"><p>채용공고</p>통합복지팀 사회복지사 채용 1차 합격자 공고 (육아휴직대체 계약직 1명)</div>
+                        <p>2024.06.25</p>
+                      </li>
+                      <li>
+                        <span class="blue">채용정보</span>
+                        <div class="listboxlist"><p>채용공고</p>통합복지팀 사회복지사 채용 (육아휴직대체 계약직 1명)</div>
+                        <p>2024.06.07</p>
+                      </li>
+                      <li>
+                        <span class="blue">채용정보</span>
+                        <div class="listboxlist"><p>채용공고</p>정보화교육 전임강사 채용공고 결과 안내</div>
+                        <p>2024.05.23</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="listsection" title="발간자료">
+                    <ul>
+                      <li>
+                        <span class="purple">발간자료</span>
+                        <div class="listboxlist"><p>소식지(좋은이웃)</p>통권85호</div>
+                        <p>2024.02.13</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div class="newsbook">
+                <div class="booktitle">
+                  <div class="bigtitle">복지관 <p>소식지</p></div>
+                  <div class="plus">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bookbox">
+                  <a href="#" class="booksection">
+                    <ul>
+                      <li></li>
+                      <li>[소식지(좋은이웃)]통권85호</li>
+                    </ul>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_participation">
+            <div class="program">
+              <div class="programtitle">
+                <div class="icon"></div>
+                <h2>함께 <p>참여</p>해요</h2>
+                <h6>현재 참여 가능한 프로그램을 소개합니다.</h6>
+              </div>
+              <div class="programsection">
+                <div class="swiper proslide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="pro1"></div>
+                      <p>건강관리 프로그램 "시원해GYM"<br>참여자 모집</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="pro2"></div>
+                      <p>가족과 힐링이웃 맺어요<br>(시각장애인가족 힐링자조모임)</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="pro3"></div>
+                      <p>경희한의원과 함께하는 '내 건강을<br>부탁해' 8월 진료 접수</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="pro4"></div>
+                      <p>시민옹호인 참여자 모집 (시각장애인,<br>비장애인 각 1명)</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="pro5"></div>
+                      <p>[구인] 경기도 성남시 분당구 소재<br>헬스키퍼 모집</p>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="pro6"></div>
+                      <p>홈페이지 리뉴얼 이벤트 "해피리뉴얼"<br>당첨자 발표!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main_share">
+            <div class="share">
+              <div class="sharetitle">
+                <div class="icon"></div>
+                <h2>함께 <p>공유</p>해요</h2>
+                <h6>서울시각장애인복지관의 행복한 이야기를 전합니다.</h6>
+              </div>
+              <ul class="sharetab">
+                <li><a href="#">갤러리</a></li>
+                <li><a href="#">동영상</a></li>
+                <li><a href="#">나눔소식</a></li>
+              </ul>
+  
+              <div class="sharesection">
+                <div class="swiper shareslide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="pro1"></div>
+                      <div class="sharetext">
+                        <p>찾아가는 장애이해교육 실시</p><br><p>안녕하세요!서울시각장애인복지관에서는 매년 송파구에 위치한</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="sharetext"></div>
+                      <div class="pro2"></div>
+                      <div class="sharetext">
+                        <p>2024년 사회복지실습생 "복실이"들을 소개합니다!</p><br><p>안녕하세요! 저희는 사회복지 실습을 향한 크고 동그란 눈이 귀여운 실습생!</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="pro3"></div>
+                      <div class="sharetext">
+                        <p>복지관 개관 33주년 기념행사</p><br><p>안녕하세요! 서울시각장애인복지관은 개관 33주년을 맞이하여 5월 17일</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="pro4"></div>
+                      <div class="sharetext">
+                        <p>장애인식개선 캠페인 '하나되는 우리, 인식을 담다'</p><br><p>안녕하세요!제44회 장애인의 날을 기념하여 4월 16일(화) 송파나루공원</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="pro5"></div>
+                      <div class="sharetext">
+                        <p>[서포터즈] 기사팀을 소개합니다!</p><br><p>안녕하세요!서울시각장애인복지관 대학생 서포터즈 '아이디어'</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="pro6"></div>
+                      <div class="sharetext">
+                        <p>[서포터즈] 영상팀을 소개합니다!</p><br><p>안녕하세요!서울시각장애인복지관 대학생 서포터즈 '아이디어'</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="main_business">
+            <div class="businesssection">
+              <div class="businesstitle">
+                <h1><p>사업</p> 안내
+                <img src="img/main/business/main_business_vec.svg" alt="꽃">
+                </h1>
+                <h6>서울시각장애인복지관에서<br>진행하는 부서별 사업 안내</h6>
+              </div>
+              <ul class="businesslist">
+                <li><a href="#">
+                  <div class="bimg1"></div>
+                  <p>경영지원팀</p>
+                </a>
+                </li>
+                <li><a href="#">
+                  <div class="bimg2"></div>
+                  <p>기획전략팀</p>
+                </a>
+                </li>
+                <li><a href="#">
+                  <div class="bimg3"></div>
+                  <p>대체자료팀</p>
+                </a>
+                </li>
+                <li><a href="#">
+                  <div class="bimg4"></div>
+                  <p>자립지원팀</p>
+                </a>
+                </li>
+                <li><a href="#">
+                  <div class="bimg5"></div>
+                  <p>통합복지팀</p>
+                </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="main_event">
+            <div class="event">
+              <ul class="eventlist">
+                <li>
+                  <div class="eventleft">
+                    <h4>후원안내</h4>
+                    <p>여러분의 따뜻한 마음이 세상을 아름답게 바꿉니다.</p>
+                    <a href="#">바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="eventright">
+                    <h4>자원봉사 안내</h4>
+                    <p>여러분의 사랑으로 함께 희망을 만들어갑니다.</p>
+                    <a href="#">바로가기</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="main_agency">
+            <div class="agency">
+              <div class="agencytext">
+                <p>함께하는 기관</p>
+                <div class="controller">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-stop stop"></div>
+                  <div class="swiper-button-go"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+              <div class="swiper agencyslide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo01.svg" alt="보건복지부">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo02.svg" alt="서울">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo03.svg" alt="서울특별시사회복지협의회">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo04.svg" alt="한국사회복지사협회">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo05.svg" alt="송파구">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo06.png" alt="국민체육진흥공단">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo07.svg" alt="현대모터스그룹">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo08.png" alt="송파구시설관리공단">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo09.svg" alt="뚜레주르">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo10.svg" alt="사랑의열매">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo11.png" alt="초록우산">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo12.png" alt="한미">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo13.svg" alt="한우리정보문화센터">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/main/agency/main_agency_logo14.svg" alt="골프존파크">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- 퀵메뉴 -->
+        <div class="quicksection">
+          <ul class="quick">
+            <li><a href="#"><img src="img/quick/quick_list_icon01.svg" alt="퀵메뉴1"></a></li>
+            <li><a href="#"><img src="img/quick/quick_list_icon02.svg" alt="퀵메뉴2"></a></li>
+            <li><a href="#"><img src="img/quick/quick_list_icon03.png" alt="퀵메뉴3"></a></li>
+            <li><a href="#"><img src="img/quick/quick_list_icon04.svg" alt="퀵메뉴4"></a></li>
+            <li><a href="#"><img src="img/quick/quick_list_icon05.svg" alt="gotop"></a></li>
+          </ul>
+        </div>
+        
+        <footer>
+          <!-- 푸터웨이브 -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="436" viewBox="0 0 1920 436" fill="none" class="ftr_path">
+            <path d="M0 70.4192V435.001V436H960H1920V41.9519C1719 75.9129 1439.71 75.2818 1189.5 52.9393C958.698 32.3298 705.298 0 463 0C185.857 0 73.1951 42.6864 0.671511 70.1648L0 70.4192Z"></path>
+          </svg>
+
+          <div class="footsection">
+            <div class="foottop">
+              <div class="logo">
+                <img src="img/footer/hd_logo.svg" alt="푸터로고">
+              </div>
+              <ul class="toplist">
+                <li><a href="#">이용약관</a></li>
+                <li><a class="bold" href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일주소 무단수집 거부</a></li>
+              </ul>
+            </div>
+            <div class="footcenter">
+              <div class="centerleft">
+                <ul>
+                  <li>
+                    <span>이용안내</span>
+                    <a class="bold" href="#">02-422-8108</a>
+                  </li>
+                  <li>
+                    <span>후원안내</span>
+                    <a class="bold" href="#">02-3433-3868</a>
+                  </li>
+                  <li>
+                    <span>운영시간: 09:00-18:00 (주말 및 공휴일 휴무)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="centerright">
+                <ul>
+                  <li><a href="#"><img src="img/footer/footer_icon01.svg" alt="카카오톡"></a></li>
+                  <li><a href="#"><img src="img/footer/footer_icon02.svg" alt="유튜브"></a></li>
+                  <li><a href="#"><img src="img/footer/footer_icon03.png" alt="해피빈"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footbottom">
+              <div class="bottomleft">
+                <ul>
+                  <li>
+                    <ul class="left1">
+                      <li>주소 : </li>
+                      <li>우) 05601 서울특별시 송파구 삼학사로19길 27(삼전동) 서울시각장애인복지관</li>
+                      <li>전화 :
+                        <a href="#">02-422-8108</a>
+                      </li>
+                      <li>팩스 : 02-416-4093</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="left2">
+                      <li>Copyright &copy; 2024 서울시각장애인복지관. All rights reserved.</li>
+                      <li>designed by DESIGNART</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottomright">
+                <div class="button">
+                  <span>관련 기관 사이트</span>
+                  <div class="changebutton"></div>
+                  <ul class="buttonlist">
+                    <li><a href="#">넓은마을</a></li>
+                    <li><a href="#">아이프리</a></li>
+                    <li><a href="#">송파구청</a></li>
+                    <li><a href="#">한국사회복지사협회</a></li>
+                    <li><a href="#">서울시사회복지사협회</a></li>
+                    <li><a href="#">한국장애인복지관협회</a></li>
+                    <li><a href="#">한국시각장애인연합회</a></li>
+                    <li><a href="#">서울시장애인복지관협회</a></li>
+                    <li><a href="#">시각장애인편의시설지원센터</a></li>
+                    <li><a href="#">한국장애인고용공단</a></li>
+                    <li><a href="#">장애인 복지서비스도움 복지로</a></li>
+                    <li><a href="#">장애인정보통신보조기기</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </section>
+
+
+    <script>
+        var swiper1 = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          effect: "fade",
+          navigation: {
+            nextEl: ".content .swiper-button-next",
+            prevEl: ".content .swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+
+      var swiper2 = new Swiper('.proslide', {
+        slidesPerView: 4,
+        direction: getDirection(),
+        navigation: {
+          nextEl: '.main_participation .swiper-button-next',
+          prevEl: '.main_participation .swiper-button-prev',
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
+
+
+      var swiper3 = new Swiper('.shareslide', {
+        slidesPerView: 3,
+        direction: getDirection(),
+        navigation: {
+          nextEl: '.main_share .swiper-button-next',
+          prevEl: '.main_share .swiper-button-prev',
+        },
+        on: {
+          resize: function () {
+            swiper3.changeDirection(getDirection());
+          },
+        },
+      });
+
+      var swiper4 = new Swiper(".agencyslide", {
+          slidesPerView: 5,
+          spaceBetween: 20,
+          navigation: {
+            nextEl: ".main_agency .swiper-button-next",
+            prevEl: ".main_agency .swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay:{
+            delay:5000,
+          }
+        });
+
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? 'vertical' :   'horizontal';
+
+        return direction;
+      }
+    </script>
+</body>
+</html>
