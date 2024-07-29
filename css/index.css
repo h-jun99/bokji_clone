@@ -505,6 +505,9 @@ header.on {
     content: '';
     z-index: 3;
 }
+.content .swiper-button-disabled::after {
+    opacity: .35;
+}
 /* 스탑 */
 .all .content .mySwiper .swiper-button-stop {
     position: relative;
@@ -1012,8 +1015,8 @@ header.on {
 .main_participation::before {
     position: absolute;
     content: '';
-    width: 487px;
-    height: 487px;
+    width: 287px;
+    height: 287px;
     border: 100px solid #FCE7EE;
     opacity: 0.5;
     border-radius: 100%;
@@ -1096,6 +1099,22 @@ header.on {
     background-color: #fff;
     border-radius: 20px;
 }
+.programsection .proslide .swiper-slide::before {
+    position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        border: 1px solid #333;
+        box-sizing: border-box;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.4s;
+}
+.programsection .proslide .swiper-slide:hover::before {
+    opacity: 1;
+}
 .main_participation .program .programsection .proslide .swiper-slide .pro1 {
     height: 340px;
     border-radius: 10px;
@@ -1147,6 +1166,189 @@ header.on {
 .swiper-button-prev {
     left: -60px;
 }
+/* 슬라이드버튼 */
+/* 다음버튼 */
+.sharesection .swiper-button-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+    top: 50%;
+    margin: -25px 0 0;
+    right: auto;
+    left: calc(100% + 40px);
+}
+.programsection .swiper-button-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+    top: 50%;
+    margin: -25px 0 0;
+    right: auto;
+    left: calc(100% + 40px);
+}
+.sharesection .swiper-button-next::before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    background-color: #666;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.programsection .swiper-button-next::before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    background-color: #666;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.sharesection .swiper-button-next:hover::before {
+    opacity: 1;
+}
+.programsection .swiper-button-next:hover::before {
+    opacity: 1;
+}
+.sharesection .swiper-button-next::after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 14px;
+    margin-top: -7px;
+    margin-left: -4.5px;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    background: url('../img/main/swiper/swiper_arw.svg') no-repeat center;
+    transform: rotate(180deg);
+    background-size: 100% auto;
+}
+.programsection .swiper-button-next::after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 14px;
+    margin-top: -7px;
+    margin-left: -4.5px;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    background: url('../img/main/swiper/swiper_arw.svg') no-repeat center;
+    transform: rotate(180deg);
+    background-size: 100% auto;
+}
+.sharesection .swiper-button-next:hover::after {
+    filter: brightness(0) invert(1);
+}
+.programsection .swiper-button-next:hover::after {
+    filter: brightness(0) invert(1);
+}
+
+
+/* 이전버튼 */
+.sharesection .swiper-button-prev {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+    top: 50%;
+    margin: -25px 0 0;
+    left: auto;
+    right: calc(100% + 40px);
+}
+.programsection .swiper-button-prev {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+    top: 50%;
+    margin: -25px 0 0;
+    left: auto;
+    right: calc(100% + 40px);
+}
+.sharesection .swiper-button-prev::before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    background-color: #666;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.programsection .swiper-button-prev::before {
+    position: absolute;
+    content: '';
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    background-color: #666;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.sharesection .swiper-button-prev:hover::before {
+    opacity: 1;
+}
+.programsection .swiper-button-prev:hover::before {
+    opacity: 1;
+}
+.sharesection .swiper-button-prev::after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 14px;
+    margin-top: -7px;
+    margin-left: -4.5px;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    background: url('../img/main/swiper/swiper_arw.svg') no-repeat center;
+    background-size: 100% auto;
+}
+.programsection .swiper-button-prev::after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 14px;
+    margin-top: -7px;
+    margin-left: -4.5px;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    background: url('../img/main/swiper/swiper_arw.svg') no-repeat center;
+    background-size: 100% auto;
+}
+.sharesection .swiper-button-prev:hover::after {
+    filter: brightness(0) invert(1);
+}
+.programsection .swiper-button-prev:hover::after {
+    filter: brightness(0) invert(1);
+}
+
+
+
+
 
 
 /* 공유 */
@@ -1207,14 +1409,26 @@ header.on {
     width: 160px;
     height: 58px;
     cursor: pointer;
+    border-radius: 140px;
     transition: all .4s;
+    color: #444;
+}
+.main_share .sharetab li:hover {
+    color: #fff;
+    background-color: #97A9EB;
 }
 .main_share .sharetab li a {
-    color: #444;
     font-family: 'kimre';
     font-size: 2rem;
     font-weight: 500;
 }
+.main_share .sharetab li.on {
+    color: #fff;
+    background-color: #97A9EB;
+    box-shadow: 6px 5px 12.5px rgba(0, 0, 0, 0.16);
+}
+
+
 /* 공유요소들 */
 .main_share .share {
     position: relative;
@@ -1242,48 +1456,164 @@ header.on {
     background-color: #fff;
     border-radius: 20px;
 }
+.shareslide .swiper-slide::before {
+    position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        border: 1px solid #333;
+        box-sizing: border-box;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.4s;
+}
+.shareslide .swiper-slide:hover::before {
+    opacity: 1;
+}
+.main_share .share .sharesection .shareslide .swiper-slide:nth-child(2n) {
+    transform: translateY(-30px);
+}
+
+
+.main_share .share .sharesection .video {
+    display: none;
+}
+.main_share .share .sharesection .news {
+    display: none;
+}
+
+
 .main_share .share .sharesection .shareslide .swiper-slide .pro1 {
     height: 260px;
     border-radius: 10px;
     background: url('../img/main/share/share1.jpg')no-repeat center/cover;
     margin: 0 auto;
 }
+.main_share .share .sharesection .shareslide .swiper-slide .video1 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/video1.png')no-repeat center/cover;
+    margin: 0 auto;
+}
+.main_share .share .sharesection .shareslide .swiper-slide .news1 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/new1.jpg')no-repeat center/cover;
+    margin: 0 auto;
+}
 .main_share .share .sharesection .shareslide .swiper-slide .pro2 {
-    height: 340px;
+    height: 260px;
     border-radius: 10px;
     background: url('../img/main/share/share2.jpg')no-repeat center/cover;
     margin: 0 auto;
 }
+.main_share .share .sharesection .shareslide .swiper-slide .video2 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/video2.png')no-repeat center/cover;
+    margin: 0 auto;
+}
+.main_share .share .sharesection .shareslide .swiper-slide .news2 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/new2.jpg')no-repeat center/cover;
+    margin: 0 auto;
+}
 .main_share .share .sharesection .shareslide .swiper-slide .pro3 {
-    height: 340px;
+    height: 260px;
     border-radius: 10px;
     background: url('../img/main/share/share3.jpg')no-repeat center/cover;
     margin: 0 auto;
 }
+.main_share .share .sharesection .shareslide .swiper-slide .video3 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/video3.png')no-repeat center/cover;
+    margin: 0 auto;
+}
+.main_share .share .sharesection .shareslide .swiper-slide .news3 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/new3.jpg')no-repeat center/cover;
+    margin: 0 auto;
+}
 .main_share .share .sharesection .shareslide .swiper-slide .pro4 {
-    height: 340px;
+    height: 260px;
     border-radius: 10px;
     background: url('../img/main/share/share4.jpg')no-repeat center/cover;
     margin: 0 auto;
 }
+.main_share .share .sharesection .shareslide .swiper-slide .video4 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/video4.jpg')no-repeat center/cover;
+    margin: 0 auto;
+}
+.main_share .share .sharesection .shareslide .swiper-slide .news4 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/new4.gif')no-repeat center/cover;
+    margin: 0 auto;
+}
 .main_share .share .sharesection .shareslide .swiper-slide .pro5 {
-    height: 340px;
+    height: 260px;
     border-radius: 10px;
     background: url('../img/main/share/share5.jpg')no-repeat center/cover;
     margin: 0 auto;
 }
+.main_share .share .sharesection .shareslide .swiper-slide .video5 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/video5.jpg')no-repeat center/cover;
+    margin: 0 auto;
+}
+.main_share .share .sharesection .shareslide .swiper-slide .news5 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/new5.jpg')no-repeat center/cover;
+    margin: 0 auto;
+}
 .main_share .share .sharesection .shareslide .swiper-slide .pro6 {
-    height: 340px;
+    height: 260px;
     border-radius: 10px;
     background: url('../img/main/share/share6.png')no-repeat center/cover;
+    margin: 0 auto;
+}
+.main_share .share .sharesection .shareslide .swiper-slide .video6 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/video6.jpg')no-repeat center/cover;
+    margin: 0 auto;
+}
+.main_share .share .sharesection .shareslide .swiper-slide .news6 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/new6.jpg')no-repeat center/cover;
+    margin: 0 auto;
+}
+.main_share .share .sharesection .shareslide .swiper-slide .video7 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/video7.jpg')no-repeat center/cover;
+    margin: 0 auto;
+}.main_share .share .sharesection .shareslide .swiper-slide .news7 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/new7.jpg')no-repeat center/cover;
+    margin: 0 auto;
+}
+.main_share .share .sharesection .shareslide .swiper-slide .news8 {
+    height: 260px;
+    border-radius: 10px;
+    background: url('../img/main/share/new8.jpg')no-repeat center/cover;
     margin: 0 auto;
 }
 .main_share .share .sharesection .shareslide .swiper-slide .sharetext {
     width: 400px;
     margin: 20px auto 0;
-    text-overflow: ellipsis;
-    /* 왜안됌!!! */
-    overflow: hidden;
+    
 }
 .main_share .share .sharesection .shareslide .swiper-slide p {
     font-size: 20px;
@@ -1291,6 +1621,8 @@ header.on {
     font-weight: 400;
     letter-spacing: -0.04em;
     text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .main_share .share .sharesection .shareslide .swiper-slide p:last-child {
     font-size: 1.5rem;
@@ -1352,6 +1684,7 @@ header.on {
     transition: all .4s;
     background-color: #fff;
     position: relative;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 .main_business .businesssection .businesslist li a {
     display: block;
@@ -1359,6 +1692,11 @@ header.on {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+}
+.main_business .businesssection .businesslist li:hover {
+    border-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-20px);
+    box-shadow: 0 2px 23px rgba(0, 0, 0, 0.1);
 }
 .main_business .businesssection .businesslist li a .bimg1 {
     height: 74px;
@@ -1546,6 +1884,7 @@ header.on {
     max-width: 100%;
     max-height: 100%;
 }
+
 /* 이전 이후 스탑 */
 .agency .controller {
     z-index: 5;
@@ -1553,11 +1892,15 @@ header.on {
     align-items: center;
     justify-content: center;
 }
+.agency .controller > *:hover {
+    border-color: #333;
+}
 /* 다음버튼 */
 .agency .swiper-button-next {
     width: 31px;
     height: 31px;
     border: 1px solid #eee;
+    border-radius: 6px;
     background-color: #fff;
     position: relative;
     top: auto;
@@ -1585,6 +1928,7 @@ header.on {
     width: 31px;
     height: 31px;
     border: 1px solid #eee;
+    border-radius: 6px;
     background-color: #fff;
     position: relative;
     top: auto;
@@ -1605,6 +1949,9 @@ header.on {
     margin-left: -3.5px;
     content: '';
     z-index: 3;
+}
+.agency .swiper-button-disabled::after {
+    opacity: .35;
 }
 /* 스탑 */
 .agency .swiper-button-stop {
@@ -1821,6 +2168,9 @@ footer .ftr_path {
     border-radius: 100%;
     transition: all .4s;
 }
+.footsection .footcenter .centerright ul li a:hover {
+    border-color: #333;
+}
 .footsection .footcenter .centerright ul li:nth-child(3) a img {
     width: 100%;
 }
@@ -1914,9 +2264,13 @@ footer .ftr_path {
     padding: 10px 20px;
     transition: all .4s;
     opacity: 0;
+    visibility: hidden;
 }
 .footsection .footbottom .bottomright .button .buttonlist.on {
     opacity: 1;
+    background-color: #f3fcec;
+    z-index: 10;
+    visibility: visible;
 }
 .footsection .footbottom .bottomright .button .buttonlist li a {
     display: block;
